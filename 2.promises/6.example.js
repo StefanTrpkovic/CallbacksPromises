@@ -10,10 +10,10 @@ let countValue = new Promise(function (resolve, reject) {
      },
   )
 
-// executes if there is an error
+// executes always
 .finally(
     function errorValue() {
-        console.log("Finally called when promise is settled");
+        console.log("Finally called when promise is resolved");
     }
 )
  

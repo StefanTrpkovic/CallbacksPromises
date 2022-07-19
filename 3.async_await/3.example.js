@@ -1,7 +1,8 @@
 // a promise
-let promise = new Promise(function (resolve, reject) {
+let promise = new Promise(function (resolve) {
     setTimeout(function () {
-    resolve('Promise resolved')}, 4 * 1000); 
+        resolve('Promise resolved')
+    }, 4 * 1000); 
 });
 
 // async function

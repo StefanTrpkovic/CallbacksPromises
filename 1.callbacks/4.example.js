@@ -13,4 +13,4 @@ function sayName(name) {
 }
 
 // calling the function after 2 seconds
-setTimeout(greet, 2* 1000, 'John', sayName);
+setTimeout(greet, 2 * 1000, 'John', sayName);
