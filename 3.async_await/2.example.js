@@ -8,3 +8,10 @@ async function f() {
 f().then(function(result) {
     console.log(result)
 });
+
+// async function myFunction(){
+//     const res = await f();
+//     console.log(res);
+// }
+
+// myFunction();
