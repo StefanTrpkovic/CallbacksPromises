@@ -1,18 +1,19 @@
 // returns a promise
 let countValue = new Promise(function (resolve, reject) {
-    reject('Promise rejected'); 
+    resolve('Promise resolved'); 
  });
- 
+
  // executes when promise is resolved successfully
  countValue.then(
      function successValue(result) {
          console.log(result);
      },
   )
+
+// executes always
+.finally(
+    function errorValue() {
+        console.log("Finally called when promise is settled");
+    }
+)
  
- // executes if there is an error
- .catch(
-     function errorValue(result) {
-         console.log(result);
-     }
- );
